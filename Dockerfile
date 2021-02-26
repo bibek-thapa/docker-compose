@@ -18,3 +18,6 @@ COPY . .
 
 # This will be executed when the container is started . It is the command line in the container which get executed after container is started. 
 CMD ["npm", "start"]
+
+
+
