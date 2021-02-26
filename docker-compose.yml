@@ -1,0 +1,9 @@
+version : '3'
+services :
+  redis-server : 
+    image: 'redis'
+  node-app:
+    restart : on-failure
+    build: . #says look current directory
+    ports :
+      - "4001:8081"  #- denotes array. first one is machine port i.e. my mac port and second one is container port. 
